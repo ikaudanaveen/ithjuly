@@ -1,6 +1,6 @@
 ---
 - hosts: kubernetes
-kubectl apply -f regapp-deploy.yml  user: root
+  user: root
   tasks:
     - name: deploy regapp on kubernetes
-      command: kubectl apply -f regapp-deploy.yml
+      command: kubectl apply -f regapp-deployment.yml
