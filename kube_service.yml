@@ -1,0 +1,6 @@
+---
+- hosts: kubernetes
+  user: root
+  tasks:
+    - name: create service for regap
+      command: kubectl apply -f regapp-service.yml
